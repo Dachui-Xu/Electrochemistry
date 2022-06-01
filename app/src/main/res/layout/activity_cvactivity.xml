@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CVActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/receiveAre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#90B44B"
+        android:gravity="center"
+        android:text="接收区"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/sv_receive"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        <TextView
+            android:id="@+id/in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="波形图"
+        android:gravity="center"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        />
+
+    <SurfaceView
+        android:id="@+id/sfv_wave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="开始" />
+
+    <Button
+        android:id="@+id/bt_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="暂停" />
+    <Button
+        android:id="@+id/bt_blueTooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="连接" />
+
+
+
+</LinearLayout>
